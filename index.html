@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanu - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: white;
+
+        }
+
+        img {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: xx-large;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(9, 9, 66);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(159, 159, 223);
+            font-size: 1.04rem;
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 1px 0;
+            align-items: center;
+            background-color: rgb(0, 0, 33);
+        }
+
+        .firstsection div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+        }
+
+        .rightsection {
+            margin-left: -87px;
+        }
+
+        .purple {
+            color: rgb(177, 125, 225);
+        }
+
+        #element {
+            color: rgb(177, 125, 225);
+            font-family: 'Dancing Script', cursive;
+            font-style: italic;
+        }
+
+        .secondsection {
+            background-color: rgb(240, 211, 220);
+            margin-top: 2px;
+            color: black;
+            padding: 34px;
+        }
+
+        .secondsection>div {
+            width: 30%;
+        }
+
+        .left2 {
+            text-align: center;
+            color: white;
+            background-color: black;
+            border-radius: 15px;
+        }
+
+        .left2 ul a {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            color: white;
+        }
+
+        .border {
+            border-radius: 100px;
+        }
+
+        .right2 {
+            margin-left: 585px;
+            margin-top: -457px;
+            margin-bottom: 70px;
+
+        }
+
+        .left2 div ul li {
+            list-style-type: none;
+        }
+
+        .align-items {
+            justify-content: left;
+        }
+
+        .thirdsection {
+            margin: auto;
+            margin-top: 3px;
+            background-color: black;
+            height: 110vh;
+        }
+
+        .color1 {
+            background-color: rgb(53, 183, 203);
+        }
+
+        .text-gray {
+            color: gray;
+            margin-left: 100px;
+        }
+
+        .thirdsection h1 {
+            padding: 10px;
+            margin-left: 100px;
+        }
+
+        .stlye-font {
+            color: white;
+        }
+
+        .box {
+            padding: 10px;
+            margin: 6px 384px;
+            min-width: 20vw;
+            border: 2px solid rgb(218, 199, 199);
+            border-radius: 8px;
+        }
+
+        .box :hover {
+            font-size: 1.02rem;
+            cursor: pointer;
+            font-style: italic;
+        }
+
+        .box1 {
+            margin-left: 157px;
+            margin-right: 683px;
+        }
+
+        .box2 {
+            margin-left: 380px;
+            margin-right: 453px;
+        }
+
+        .box3 {
+            margin-left: 583px;
+            margin-right: 253px;
+        }
+
+        .fourthsection {
+            margin-top: 3px;
+            background-color: rgb(18, 3, 32);
+            height: 90vh;
+        }
+
+        .fourthsection h1 {
+            margin-left: 60px;
+            padding: 65px 0px 1px 35px;
+            font-size: 35px;
+        }
+
+        .left4 {
+
+            max-width: 40%;
+            padding: 20px;
+            margin-left: 85px;
+        }
+
+        .right4 {
+
+            max-width: 40%;
+            padding: 20px;
+            margin-left: 570px;
+            margin-top: -300px;
+        }
+
+        .btnres {
+            border-width: 2px;
+            padding: 10px;
+            border-color: rgb(247, 4, 45);
+            border-radius: 5px;
+            background-color: rgb(18, 3, 32);
+            color: white;
+            font-size: large;
+            font-style: italic;
+            cursor: pointer;
+        }
+
+        .fourthsection h6 {
+            font-size: 20px;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .btnres:hover {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(145, 145, 173);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Tanu's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple"> Tanu Rai.</span>
+                <div>and I am a Enthusiast </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="webb.webp" alt="" style="padding-right: 23px; ;">
+            </div>
+        </section>
+
+        <section class="secondsection">
+            <div class="left2">
+                <br><br>
+                <br><br>
+                <img src="p.png" width="200" height="220" class="border">
+                <h1 style="padding: 10px;">TANU RAI</h1>
+                <img src="linkedin (1).png" width="20" height="20">
+                <img src="twitter.png" width="20" height="20">
+                <img src="facebook.png" width="20" height="20">
+                <img src="instagram.png" width="20" height="20">
+                <ul class="align-items" style="list-style-type: none;">
+                    <li><a href="/"> HOME </a></li>
+                    <li><a href="/">About Me</a></li>
+                    <li><a href="/">Resume</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                    <br><br><br><br>
+                </ul>
+            </div>
+            <div class="right2">
+                <h1>About Me</h1>
+                <hr><br>
+                I am a third year student pursuing <em>Electronics And Communication Engineering</em> at ABESEC,GZB.
+                <br><br>
+                <h2 style="color: rgb(244, 84, 84); border-style:double;">INTRODUCTION</h2>
+                <ul style="list-style-type: circle; padding: 21px;">
+                    <li><b>Name:</b> TANU RAI</li>
+                    <li><b>Age:</b> 20</li>
+                    <li><b>Email:</b> raitanu841@gmail.com</li>
+                    <li><b>Degree:</b> Undergraduate</li>
+                    <li><b>Phone:</b> 95XXXXXXXX</li>
+                    <li><b>Eterned at:</b> Codeclause, Bharat Intern, Nullstop,Codsoft.</li>
+                </ul><br>
+                Now lets talk about my interests:I am truly into web development and working on my skills.
+                and i would like to mention that i am interested in sports.
+            </div>
+        </section>
+
+        <section class="thirdsection">
+            <br>
+            <span class="text-gray">what i have done so far...</span>
+            <h1>MY SERVICES</h1>
+            <div class="justify-content text-align">
+                <div class="box1 box">
+                    <h2 class="color1">WEB DEVELOPMENT</h2>
+                    <hr>
+                    <p>Navigate the world of web technology,where i can create dynamic,responsive websites utilizing
+                        state-of-the art coding methods.Learn more about my passion for developing dependable and
+                        user-friendly web solutions</p>
+                    <br>
+                    <button class="btn">Learn more</button>
+                </div>
+                <div class="box2 box">
+                    <h2 class="color1">UI/UX DESIGN</h2>
+                    <hr>
+                    <p>Experience how i apply creativity and user-centered design concepts to create visually appealing
+                        interfaces and seamless user experiences as i demonstrate the art of UI/UX design.Learn more
+                        about how i turn concepts into visually stunning digital designs.</p>
+                    <button class="btn">Learn more</button>
+                </div>
+                <div class="box3 box">
+                    <h2 class="color1">APP DEVELOPMENT</h2>
+                    <hr>
+                    <p>Explore the world of mobile applications by debveloping innovative user-friendly apps for a
+                        variety of demands using knowledge in android development. Find out more about how i transform
+                        concepts into useful and interesting mobile experiences.</p>
+                    <button class="btn">Learn more</button>
+                </div>
+            </div>
+            </div><br>
+        </section>
+        <section class="fourthsection">
+            <h1>CONTACT ME</h1>
+            <div class="left4">
+                <img src="send.png" width="30" height="30"> Raitanu841@gmail.com
+                <br> <br>
+                <img src="phone-call.png" width="30" height="30">+919560580127
+                <br> <br>
+                <img src="linkedin (1).png" width="20" height="20">
+                <img src="instagram.png" width="20" height="20">
+                <img src="twitter.png" width="20" height="20">
+                <img src="facebook.png" width="20" height="20">
+                <br><br>
+                <button class="btnres">Download Resume</button>
+            </div>
+            <div class="right4">
+                <h6 style="background-color: rgba(69, 17, 96, 0.306);;"> Name</h6>
+                <h6 style="background-color: rgba(69, 17, 96, 0.306); height: 30px; ">Your Email</h6>
+                <h6 style="background-color: rgba(69, 17, 96, 0.306); height: 120px;">Your Message</h6>
+                <button class="btnres" style="margin-left: 40%; margin-top: 20px;">SUMBIT</button>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer style="color: black; background-color: rgb(82, 81, 81);">
+        Copyright &copy; raitanu841@gamil.com | All rights reserved
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', '&amp; Designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
